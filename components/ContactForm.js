@@ -33,6 +33,7 @@ export default function ContactForm() {
 
   // A contact form with a name, email, and message using tailwind css.
   // TODO: Add a better validation both UI, logic, and backend.
+  // TODO: Add a display of errors if they occur. 
   return (
     <div id="contact" className="min-h-screen grid place-items-center content-center p-4">
       <div className="max-w-8xl w-full flex flex-wrap justify-center">
@@ -55,6 +56,7 @@ export default function ContactForm() {
               </label>
               <textarea required className="appearance-none block w-full bg-gray-200 h-40 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-message" type="text" placeholder="Lets get coffee." ref={messageRef} />
               {success && <Alert type="success">Message sent!</Alert>}
+
             </div>
           </div>
           <div className="flex items-center justify-center">
