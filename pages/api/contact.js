@@ -3,6 +3,10 @@ import sendgrid from '@sendgrid/mail';
 sendgrid.setApiKey(process.env.SENDGRID_API_KEY);
 
 export default async function handler(req, res) {
+  return res.status(200).json({
+    statusCode: 200,
+    body: 'Hello, world!',
+  });
   if (req.method === 'POST') {
     const { name, email, message } = req.body;
 
