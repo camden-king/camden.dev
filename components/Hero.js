@@ -18,7 +18,7 @@ export default function Hero() {
         </p>
 
         <div className='z-10 mr-2'>
-            <Link href='#contact'>
+            <Link href='#contact' passHref>
                 <button type="button" className="h-10 px-6 mt-4 font-semibold rounded-md bg-blue-500 w-32 justify-self-end">
                     Contact
                 </button>
