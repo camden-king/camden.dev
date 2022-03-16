@@ -12,6 +12,6 @@ reference: ["https://mnzel.medium.com/how-to-activate-python-venv-on-a-mac-a8fa1
  2. Activate virtual environment:
 	`source venv/bin/activate`
  3. (Optional) Install dependancies from requirements.txt:
-	`pip install -r requerments.txt`
+	`pip install -r requirements.txt`
  4. (Optional) Run your application:
 	`python3 app.py`

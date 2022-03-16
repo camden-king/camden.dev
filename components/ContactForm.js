@@ -1,11 +1,12 @@
 import React from 'react';
-import Alert from '../UI/Alert';
+import Alert from './Alert';
 
 export default function ContactForm() {
   const nameRef = React.createRef();
   const emailRef = React.createRef();
   const messageRef = React.createRef();
   const [success, setSuccess] = React.useState(false);
+  const [error, setError] = React.useState();
 
   async function handleSubmit(event) {
     event.preventDefault();
@@ -28,7 +29,10 @@ export default function ContactForm() {
     if (response.ok) {
       setSuccess(true);
       event.target.reset();
-    } 
+    } else {
+      console
+      setError(response.statusText);
+    }
   }
 
   // A contact form with a name, email, and message using tailwind css.
@@ -56,6 +60,7 @@ export default function ContactForm() {
               </label>
               <textarea required className="appearance-none block w-full bg-gray-200 h-40 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-message" type="text" placeholder="Lets get coffee." ref={messageRef} />
               {success && <Alert type="success">Message sent!</Alert>}
+              {error && <Alert type="error">Something went wrong.</Alert>}
 
             </div>
           </div>
