@@ -27,7 +27,7 @@ export default function Home({ allProjectData }) {
     <div className=''>
       <Head>
         <title>Camden King | Computer Science Senior at University of Michigan</title>
-        <meta name="description" content="Hi! I'm Camden! Come check out some cool stuff that I have made." />
+        <meta name="description" content="Hi! I'm Camden! Come check out some cool stuff that I have made and say hi." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
