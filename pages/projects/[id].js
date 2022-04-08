@@ -1,5 +1,6 @@
 import { getAllProjectIds, getProjectData } from "../../lib/projects"
 import Head from "next/head"
+import Image from "next/image"
 
 export async function getStaticPaths() {
     const paths = getAllProjectIds()
@@ -22,15 +23,16 @@ export default function Projects({ projectData }) {
   return (
     <div className=''>
         <Head>
-            <title>Camden King | Computer Science Senior at University of Michigan</title>
-            <meta name="description" content="Hi! I'm Camden! Come check out some cool stuff that I have made and say hi." />
+            <title>{projectData.title} | Camden King</title>
+            <meta name="description" content={projectData.description} />
             <link rel="icon" href="/favicon.ico" />
         </Head>
 
-        <main className='text-lg text'>
-            <h1>{projectData.title}</h1>
-            <p>{projectData.description}</p>
-            <div dangerouslySetInnerHTML={{ __html: projectData.contentHtml }} />
+        <main className='text-lg grid place-items-center p-4'>
+            <div className="max-w-2xl">
+                <h1 className="">{projectData.title}</h1>
+                <div dangerouslySetInnerHTML={{ __html: projectData.contentHtml }} />   
+            </div>
         </main>
 
         {/* <footer>

@@ -7,16 +7,28 @@ demo_link: null
 code_link: null 
 priority: 10 # a priority for where to display in ordered lists
 ---
+![ridejam.jpeg](/images/ridejam.jpeg) ![ridejam.jpeg](/images/ridejam.jpeg)
+![ridejam.jpeg](/images/ridejam.jpeg)
+![ridejam.jpeg](/images/ridejam.jpeg)
 ## Team:
 Myself - Developer, Cofounder
+
 [Max Kopitz](https://www.linkedin.com/in/maxkopitz/) - Developer, Cofounder
+
 [Justin Minn](https://www.linkedin.com/in/justinminn/) - Business
+
 [Jeremy Kim](https://www.linkedin.com/in/jeremy-kim-2a80ba218/) - Business
+
 ## Tech Stack:
 RideJam is built on the Spotify API using a React frontend, Python Flask server, Postgresql database and deployed to AWS Elastic Beanstalk and Firebase hosting.
+
 ## Story:
 During COVID I started Uber driving as a way to make some extra money. While driving I was always worried about what music I was playing and would get mixed responses. I would often get complimented on my music choice by fellow college students but would also get other riders who asked me to put something else on. That is when I got the idea to build an app to let passengers choose the music during their ride.
+
 I then made a very basic (and ugly) web app using Firebase to test out my idea. After getting the app mostly functional I decided to test it out. I settled on the name Songwave, purchased the domain [songwave.app,](http://songwave.app/) and used Firebase to get the app up and running. I hung a piece of paper with a QR code to Songwave in the back seat of my car and went out driving. Within my first couple of rides, I heard the two passengers in the backseat talking about it and one of them connected and queued two songs.
+
 After testing out Songwave for a couple more days of driving I decided it had been a success and it was time to build out the full application. I then brought the idea up to Max who was happy to join me in what has become [RideJam.app](https://ridejam.app/). We decided to keep it as a web app in order for passengers to be able to connect with as little friction as possible. We decided to use React, Flask, and Postgresql based on our previous experience.
+
 While building we determined we needed to rebrand to represent the industry we were working in. This is when we came up with the name RideJam. After working for a couple of months we had completed our second iteration and began testing in my car. During this time we were also working with an ENTR 411 class here at the University of Michigan where Justin and Jeremy joined us from. They focused on talking with drivers and passengers to get feedback and validate our problem statement and business model.
+
 During winter 2022 we received a small amount of funding from the University of Michigan to onboard approximately 100 drivers. RideJam is currently operational and we are constantly working on improving our user experience. Feel free to reach out for any reason.
