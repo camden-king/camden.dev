@@ -21,6 +21,17 @@ export async function getStaticProps({ params }) {
     }
 }
 
+const ResponsiveImage = (props) => {
+    return (
+        <div className="flex justify-center">
+            <Image {...props} />
+        </div>)
+}
+
+const components = {
+    Image: ResponsiveImage,
+}
+
 export default function Projects({ data, content }) {
   return (
     <div className=''>
@@ -30,10 +41,19 @@ export default function Projects({ data, content }) {
             <link rel="icon" href="/favicon.ico" />
         </Head>
 
-        <main className='text-lg grid place-items-center p-4'>
-            <div className="max-w-2xl">
-                <h1 className="font-bold text-7xl mt-24 mb-12">{data.title}</h1>
-                <MDXRemote {...content} />
+        <main className='grid place-items-center p-4'>
+            <div className="">
+                {data.live_link ? 
+                    <a href={data.live_link} target="_blank" rel="noopener noreferrer">
+                        <h1 className="font-bold text-7xl mt-20 mb-9 hover:underline">{data.title}</h1>
+                    </a>
+                :   
+                    <h1 className="font-bold text-7xl mt-20 mb-9">{data.title}</h1>
+                }
+                <div className="prose max-w-3xl">
+                    <MDXRemote components={components} {...content} />
+                </div>
+                
             </div>
         </main>
 

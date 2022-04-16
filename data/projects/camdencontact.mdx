@@ -8,4 +8,18 @@ code_link: https://github.com/camden-king/contact-exchange
 priority: 1 # a priority for where to display in ordered lists
 ---
 
-Based on a project by amulya palmer
+<Image src="/images/Camden_contact_banner.png" layout="intrinsic" alt="Screen shots of Camden.conact a virtual business card on mobile." sizes width={3510} height={2531} />
+
+[Camden.contact](http://Camden.contact) is a virtual business card that allows the user to see my contact information and send their contact information. 
+
+## Inspiration:
+
+Back when I was interning at [Tour.Video](http://Tour.Video) by LeaseMagnets I was apart of a project to build a two way contact exchange into the TourMagnet. This was going to be a part of the demo at an upcoming conference. At the end of a demo the user would be prompted for their information and then be show the screen below where they are able to download the VCF contact file. 
+
+This inspired me to build [Camden.contact](http://Camden.contact) as a prototype of a virtual business card supporting contact sharing in both directions. A demo of the TourMagnets two way contact exchange can be found [here](https://embed.tour.video?uuid=5d25b3c0-19bc-40ff-a0d3-762ccfb7cdc9&inline=true&screen=floor_plans.form_screen&inlineCTA=Take%20a%20tour&hideButtons=false&tourMsg=undefined) (Note: this feature is not currently maintained by [Tour.Video](http://Tour.Video) and may not function as intended). 
+
+<Image src="/images/leasemagnets_contact_exchange.jpeg" layout="intrinsic" alt="Screen shots of two way contact exchange on the tour magnet by LeaseMagnets." width={234} height={506.2} />
+
+## Implementation:
+
+Currently [Camden.contact](http://Camden.contact) is built using create-react-app and Firebase storage. When a contact is submitted it is added to the Firebase and must be retrieved manually. Future plans for [Camden.contact](http://Camden.contact) are to improve performance by transitioning to using Next.js and sending an email to the site owner when a contact form is submitted.
