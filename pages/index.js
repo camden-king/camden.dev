@@ -38,9 +38,9 @@ export default function Home({ allProjectData }) {
         <ContactForm />
       </main>
 
-      {/* <footer>
-        hello world from footer
-      </footer> */}
+      <footer className="text-center mt-12 mb-4">
+          Made with ❤️ in <Link href="/">Ann Arbor</Link>
+      </footer> 
     </div>
   )
 }

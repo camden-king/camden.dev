@@ -2,6 +2,7 @@ import { getAllProjectIds, getProjectData } from "../../lib/projects"
 import Head from "next/head"
 import Image from "next/image"
 import { MDXRemote } from "next-mdx-remote";
+import Link from "next/link";
 
 export async function getStaticPaths() {
     const paths = getAllProjectIds()
@@ -41,6 +42,12 @@ export default function Projects({ data, content }) {
             <link rel="icon" href="/favicon.ico" />
         </Head>
 
+        <header className="text-right m-0 p-3 bg-white fixed top-0 left-0 right-0 z-10">
+            <Link href="/">
+                <a className="text-6xl font-bold hover:underline">Camden King</a>
+            </Link>
+        </header>
+
         <main className='grid place-items-center p-4'>
             <div className="">
                 {data.live_link ? 
@@ -57,9 +64,9 @@ export default function Projects({ data, content }) {
             </div>
         </main>
 
-        {/* <footer>
-        hello world from footer
-        </footer> */}
+        <footer className="text-center mt-12 mb-4">
+            Made with ❤️ in <Link href="/">Ann Arbor</Link>
+        </footer> 
     </div>
   )
 }
