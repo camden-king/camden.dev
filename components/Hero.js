@@ -11,10 +11,10 @@ export default function Hero() {
             Camden King
         </h1>
         <p className='text-xl text-bold mt-1 mr-2 sm:text-3xl sm:mt-2 md:text-3xl lg:text-4xl z-10'>
-            University of Michigan 2022
+            SWE @ Google
         </p>
         <p className='text-xl text-bold mr-2 sm:text-3xl md:text-3xl lg:text-4xl z-10'>
-            B.S.E. Computer Science
+            CS @ Umich Alum
         </p>
 
         <div className='z-10 mr-2'>
