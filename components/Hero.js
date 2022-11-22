@@ -14,7 +14,7 @@ export default function Hero() {
             SWE @ Google
         </p>
         <p className='text-xl text-bold mr-2 sm:text-3xl md:text-3xl lg:text-4xl z-10'>
-            CS @ Umich Alum
+            CS Alum @ Umich
         </p>
 
         <div className='z-10 mr-2'>
